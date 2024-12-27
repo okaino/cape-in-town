@@ -1,0 +1,150 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    border-radius: 8px;
+    width: 800px;
+    padding: 20px;
+    position: relative;
+  }
+  .extra-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px thin #ffc430;
+  }
+  
+  .extra-select option {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .extra-select option:hover {
+    background-color:  #ffc430;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-body {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  select option:hover {
+    background-color: #ffc430; /* Your desired hover color */
+  }
+  .food-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .food-details {
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+  .extra-patty label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal-footer {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .add-to-cart-button {
+    background-color: #ffc430;
+    color: white;
+    border: none;
+    color: #535353;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .modal-body img {
+    width: 100%;
+    height: 100%;
+  }
+  .add-to-cart-button:hover {
+    background-color: #218838;
+    color:#ccc;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+    .modal-content {
+        background: white;
+        border-radius: 8px;
+        width: 80vw;
+        padding: 20px;
+        position: relative;
+      }
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .modal-body img {
+        width: 100%;
+        height: 100%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+    .modal-content {
+        background: white;
+        border-radius: 8px;
+        width: 80vw;
+        padding: 20px;
+        position: relative;
+      }
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    .modal-body img {
+        width: 100%;
+        height: 100%;
+      }
+}  

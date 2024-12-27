@@ -1,0 +1,159 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto-Thin', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Global Container */
+/* .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.container {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-image: url("./image/banner.png");
+  background-color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem ;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+
+/* header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+} */
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Hero Page */
+.hero-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-container p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+.hero-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Category Page */
+.category-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.category-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.category-container p {
+  font-size: 1rem;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; 
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row; /* Default for larger screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .hero-buttons {
+    flex-direction: column; /* Change to column for tablets and mobile */
+    align-items: center; /* Center-align the buttons */
+  }
+  header nav a {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-container p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

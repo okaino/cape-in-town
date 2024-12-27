@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Oklahoma Hamburger",
+    "price": 270,
+    "description": "100 gr. dana döş kıyma, karemelize soğan, özel sos, belçika usulü el kesme patates kızartması ile",
+    "category": "toShare",
+    "type": "meat"
+  },
+  {
+    "id": "2",
+    "name": "Chicken Tenders",
+    "price": 250,
+    "description": "Özel kaplamalı tavuk bonfile, belçika usulü el kesmesi patates kızartması, acı sos",
+    "category": "toShare",
+    "type": "chicken"
+  },
+  {
+    "id": "3",
+    "name": "Baharatlı Patates Cipsi",
+    "price": 150,
+    "description": "Belçika usulü el kesmesi patates kızartması",
+    "category": "toShare",
+    "type": "meat"
+  },
+  {
+    "id": "4",
+    "name": "Oklahoma Cheese Burger",
+    "price": 280,
+    "description": "100 gr. dana döş kıyma, karemelize soğan, cheddar peyniri, özel sos, belçika usulü el kesme patates kızartması ile",
+    "category": "toShare",
+    "type": "meat"
+  },
+  {
+    "id": "5",
+    "name": "Chicken Burger",
+    "price": 250,
+    "description": "(Özel kaplamalı tavuk bonfile,coleslaw, tartar sos,belçika usulü el kesmesi patates kızartması)",
+    "category": "toShare",
+    "type": "chicken"
+  },
+  {
+    "id": "6",
+    "name": "Margherita",
+    "price": 300,
+    "description": "",
+    "category": "pizzas",
+    "type": "pizzas"
+  },
+  {
+    "id": "7",
+    "name": "Sebzeli",
+    "price": 330,
+    "description": "",
+    "category": "pizzas",
+    "type": "pizzas"
+  },
+  {
+    "id": "8",
+    "name": "Etli",
+    "price": 400,
+    "description": "",
+    "category": "pizzas",
+    "type": "pizzas"
+  },
+  {
+    "id": "9",
+    "name": "Coca Cola",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "10",
+    "name": "Fanta",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "11",
+    "name": "Fuse Tea",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "12",
+    "name": "Sprite",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "13",
+    "name": "Redbull",
+    "price": 75,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "14",
+    "name": "Soda",
+    "price": 35,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "15",
+    "name": "Su",
+    "price": 30,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  }
+]
