@@ -58,7 +58,7 @@ const CategoryPage = () => {
     // Fetch food data based on category
     const fetchFoods = async () => {
       try {
-        const response = await axios.post("https://cape-in-town-server.vercel.app:3000/foods", {
+        const response = await axios.post("https://cape-in-town-server.vercel.app/foods", {
           category,
         });
         setFoods(response.data); // Set the fetched data
