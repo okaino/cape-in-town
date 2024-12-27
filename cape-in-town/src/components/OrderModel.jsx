@@ -20,7 +20,7 @@ const OrderModel = ({ food, isOpen, onClose, onAddToCart, photo }) => {
       quantity:initialQuantity,
       extraChick
     }));
-    console.log(store.getState().products)
+    //console.log(store.getState().products)
     onAddToCart(selectedItem);  
     onClose();
   };

@@ -22,9 +22,7 @@ const CategoryPage = () => {
   const [loading, setLoading] = useState(true);
   const [orderModel, setOrderModel] = useState(false);
   const [selectedFood, setselectedFood] = useState(null)
-  const openOrderModel = (food) => {
-    console.log(food)
-    
+  const openOrderModel = (food) => {    
     setOrderModel(true)
     setselectedFood(food)
   }

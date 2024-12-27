@@ -12,7 +12,6 @@ const HeroPage = () => {
     { name: "Drinks", path: "/category/drinks", key:3 },
   ];
   const handleCategoryClick = (category) => {
-    console.log(category)
     navigate(category)
   };
 

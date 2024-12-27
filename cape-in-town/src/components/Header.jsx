@@ -15,13 +15,11 @@ const Header = () => {
   const cartCount = count.reduce((total, item) => total + item.quantity, 0)
   const navigate = useNavigate();
   const asdas = () => {
-    console.log(count)
 
   }
 
   const wpFunc = async (data) => {
     try {
-      console.log(data)
       const cart = data
       const response = await axios.post("http://localhost:3000/sendCart", {cart});
       const { whatsappUrl } = response.data;
