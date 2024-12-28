@@ -21,7 +21,7 @@ const Header = () => {
   const wpFunc = async (data) => {
     try {
       const cart = data
-      const response = await axios.post("http://localhost:3000/sendCart", {cart});
+      const response = await axios.post("https://cape-in-town-server.vercel.app/sendCart", {cart})
       const { whatsappUrl } = response.data;
       window.open(whatsappUrl,  "_blank");
     } catch (error) {
