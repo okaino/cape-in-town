@@ -6,7 +6,6 @@ const fs = require('fs');
 const path = require('path');
 const router = new express.Router();
 const dataFilePath = path.join(__dirname, '../data', 'data.json');
-const wpNum = process.env.WHATSAPP_NUMBER
 router.use(bodyParser.json());
 // Ensure the data file exists
 if (!fs.existsSync(dataFilePath)) {
@@ -77,7 +76,7 @@ router.post('/sendCart', (req, res) => {
       if(cart.notes.length >0)
         message += `Notlar: \n ${cart.notes}`
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${wpNum}?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/${process.env.WHATSAPP_NUMBER}?text=${encodedMessage}`;
     res.json({ whatsappUrl })
 })
 
