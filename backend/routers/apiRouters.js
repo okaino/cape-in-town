@@ -64,6 +64,7 @@ router.put('/items/:id', (req, res) => {
 // }
 
 router.post('/sendCart', (req, res) => {
+    console.log("WhatsApp Number:", process.env.WHATSAPP_NUMBER);
     const { cart } = req.body;
     if (!cart || cart.length === 0) {
         return res.status(400).json({ error: "Cart is empty" });
