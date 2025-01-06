@@ -9,6 +9,9 @@ import WhatsappIcon from "../image/whatsapp.png"
 // import OklahomaCheeseHamburgerCategory from "../image/oklahoma-cheese.jpg"
 import DrinksCategory from "../image/icecek-kategori.png"
 import SnackCategory from "../image/chicken-tenders.jpg"
+import MargheritaPizza from "../image/margherita-pizza.jpeg"
+import SebzeliPizza from "../image/sebzeli-pizza.jpeg"
+import EtliPizza from "../image/etli-pizza.jpeg"
 
 import './ShoppingCartDrawer.css';
 
@@ -83,6 +86,18 @@ const ShoppingCartDrawer = ({  onOrder }) => {
 
       case "Baharatlı Patates Cipsi":
         return SnackCategory;
+        break;
+
+      case "Margherita":
+        return MargheritaPizza;
+        break;
+
+      case "Sebzeli":
+        return SebzeliPizza;
+        break;
+
+      case "Etli":
+        return EtliPizza;
         break;
 
     }
