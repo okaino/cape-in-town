@@ -14,8 +14,6 @@ import ChickenBurger from "../image/chicken-burger.jpg"
 import MargheritaPizza from "../image/margherita-pizza.jpg"
 import SebzeliPizza from "../image/sebzeli-pizza.jpg"
 import EtliPizza from "../image/etli-pizza.jpg"
-// import OklahomaCheeseHamburgerCategory from "../image/oklahoma-cheese.jpg"
-// import OklahomaCheeseHamburgerCategory from "../image/oklahoma-cheese.jpg"
 import DrinksCategory from "../image/icecek-kategori.png"
 import SnackCategory from "../image/chicken-tenders.jpg"
 

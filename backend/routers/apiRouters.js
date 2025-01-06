@@ -63,7 +63,6 @@ router.put('/items/:id', (req, res) => {
 // }
 
 router.post('/sendCart', (req, res) => {
-    console.log("WhatsApp Number:", process.env.WHATSAPP_NUMBER);
     const { cart } = req.body;
     if (!cart || cart.length === 0) {
         return res.status(400).json({ error: "Cart is empty" });
@@ -72,8 +71,8 @@ router.post('/sendCart', (req, res) => {
       cart.cartDynamic.forEach((item, index) => {
         message += `${index + 1}. ${item.name} - Adet: ${item.quantity} - ${item.extraPatty ? item.extraPatty : item.extraChick ? item.extraChick : ""}\n`;
       });
-      message += `Adres: \n ${cart.address}\n`
-      if(cart.notes.length >0)
+      message += `Adres: \n ${cart.address}\n Sepet Toplamı: ${cart.totalPrice}\n`
+      if(cart.notes.length > 0)
         message += `Notlar: \n ${cart.notes}`
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${process.env.WHATSAPP_NUMBER}?text=${encodedMessage}`;
