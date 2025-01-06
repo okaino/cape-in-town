@@ -9,9 +9,9 @@ import WhatsappIcon from "../image/whatsapp.png"
 // import OklahomaCheeseHamburgerCategory from "../image/oklahoma-cheese.jpg"
 import DrinksCategory from "../image/icecek-kategori.png"
 import SnackCategory from "../image/chicken-tenders.jpg"
-import MargheritaPizza from "../image/margherita-pizza.jpeg"
-import SebzeliPizza from "../image/sebzeli-pizza.jpeg"
-import EtliPizza from "../image/etli-pizza.jpeg"
+import MargheritaPizza from "../image/margherita-pizza.jpg"
+import SebzeliPizza from "../image/sebzeli-pizza.jpg"
+import EtliPizza from "../image/etli-pizza.jpg"
 
 import './ShoppingCartDrawer.css';
 
