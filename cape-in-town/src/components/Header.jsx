@@ -23,7 +23,7 @@ const Header = () => {
       const cart = data
       const response = await axios.post("https://cape-in-town-server.vercel.app/sendCart", {cart})
       const { whatsappUrl } = response.data;
-      window.open(whatsappUrl,  "_blank");
+      window.location.href = whatsappUrl;
     } catch (error) {
       console.error("Error generating WhatsApp URL:", error);
       alert("Failed to send order. Please try again.");
