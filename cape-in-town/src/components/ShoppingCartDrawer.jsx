@@ -41,15 +41,24 @@ const ShoppingCartDrawer = ({ onOrder }) => {
   const toggleDrawer = () => setIsOpen(!isOpen);
 
   const handleQuantityChange = (index, delta) => {
-    setCartDynamic((prevCart) => {
-      const updatedCart = prevCart.map((item, i) =>
-        i === index
-          ? { ...item, quantity: Math.max(0, item.quantity + delta) }
-          : item
-      );
-      store.dispatch(updateAllProducts(updatedCart));
-      return updatedCart;
-    });
+    if(cartDynamic[index].quantity == 1 && delta == -1){
+      setCartDynamic((prevCart) => {
+        const updatedCart = prevCart.filter((_, i) => i !== index);
+        store.dispatch(updateAllProducts(updatedCart)); 
+        return updatedCart;
+      });
+    }
+    else {
+      setCartDynamic((prevCart) => {
+        const updatedCart = prevCart.map((item, i) =>
+          i === index
+            ? { ...item, quantity: Math.max(0, item.quantity + delta) }
+            : item
+        );
+        store.dispatch(updateAllProducts(updatedCart));
+        return updatedCart;
+      });
+    }
   };
 
   const handleTextChange = (e) => {
@@ -120,7 +129,7 @@ const ShoppingCartDrawer = ({ onOrder }) => {
                     </span>
                   )}
                   <div className="item-ops-button">
-                    <button onClick={() => handleQuantityChange(index, -1)} disabled={item.quantity === 1} className="item-quantity">-</button>
+                    <button onClick={() => handleQuantityChange(index, -1)} className="item-quantity">-</button>
                     <p className="item-quantity-num">{item.quantity}</p>
                     <button onClick={() => handleQuantityChange(index, 1)} className="item-quantity">+</button>
                   </div>
