@@ -14,8 +14,18 @@ import ChickenBurger from "../image/chicken-burger.jpg"
 import MargheritaPizza from "../image/margherita-pizza.jpg"
 import SebzeliPizza from "../image/sebzeli-pizza.jpg"
 import EtliPizza from "../image/etli-pizza.jpg"
-import DrinksCategory from "../image/icecek-kategori.png"
 import SnackCategory from "../image/chicken-tenders.jpg"
+
+import CocaCola from "../image/coca-cola.jpg"
+import CocaColaZero from "../image/coca-cola-zero.jpg"
+import Fanta from "../image/fanta.jpg"
+import FuseKarpuz from "../image/fuse-karpuz.jpg"
+import Redbull from "../image/redbull.jpg"
+import FuseLimon from "../image/fuse-limon.jpg"
+import FuseMangoAn from "../image/fuse-mangoan.jpg"
+import FuseSefta from "../image/fuse-sefta.jpg"
+import Su from "../image/su.jpg"
+import Sade from "../image/sade.jpg"
 
 const CategoryPage = () => {
   const { category } = useParams(); // Get category from URL params
@@ -63,6 +73,45 @@ const CategoryPage = () => {
 
       case "Etli":
         return EtliPizza;
+        break;
+
+      case "Coca Cola":
+        return CocaCola;
+        break;
+
+      case "Coca Cola Zero":
+        return CocaColaZero;
+        break;
+
+      case "Fanta":
+        return Fanta;
+        break;
+
+      case "Fuse Tea Karpuz":
+        return FuseKarpuz;
+        break;
+
+      case "Fuse Tea Limon":
+        return FuseLimon;
+        break;
+
+      case "Fuse Tea Mango Ananas":
+        return FuseMangoAn;
+        break;
+
+      case "Fuse Tea Şeftali":
+        return FuseSefta;
+        break;
+      case "Redbull":
+        return Redbull;
+        break;
+
+      case "Su":
+        return Su;
+        break;
+
+      case "Soda":
+        return Sade;
         break;
 
     }

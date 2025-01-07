@@ -33,6 +33,7 @@ router.post('/items', (req, res) => {
 router.post('/foods', (req, res) => {
     const { category } = req.body; // Extract category from request body
     const data = readData(); // Assuming readData() reads from data.json
+    console.log("data",data)
     const filteredData = data.filter((item) => item.category === category);
     res.json(filteredData);
 });

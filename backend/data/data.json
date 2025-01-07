@@ -81,7 +81,7 @@
   },
   {
     "id": "11",
-    "name": "Fuse Tea",
+    "name": "Fuse Tea Karpuz",
     "price": 65,
     "description": "",
     "category": "drinks",
@@ -89,7 +89,7 @@
   },
   {
     "id": "12",
-    "name": "Sprite",
+    "name": "Fuse Tea Limon",
     "price": 65,
     "description": "",
     "category": "drinks",
@@ -97,6 +97,30 @@
   },
   {
     "id": "13",
+    "name": "Fuse Tea Mango Ananas",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "14",
+    "name": "Fuse Tea Şeftali",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "15",
+    "name": "Sprite",
+    "price": 65,
+    "description": "",
+    "category": "drinks",
+    "type": "liq"
+  },
+  {
+    "id": "16",
     "name": "Redbull",
     "price": 75,
     "description": "",
@@ -104,7 +128,7 @@
     "type": "liq"
   },
   {
-    "id": "14",
+    "id": "17",
     "name": "Soda",
     "price": 35,
     "description": "",
@@ -112,7 +136,7 @@
     "type": "liq"
   },
   {
-    "id": "15",
+    "id": "18",
     "name": "Su",
     "price": 30,
     "description": "",
