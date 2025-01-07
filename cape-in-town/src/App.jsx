@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <div style={{ minHeight: "80vh", marginTop:"-20px" }}>
+      <div style={{ minHeight: "80vh", height:"fit-content", marginTop:"-20px" }}>
       <Routes> 
       <Route path="/" element={<HeroPage />} />
       <Route path="/category/:category" element={<CategoryPage />} />

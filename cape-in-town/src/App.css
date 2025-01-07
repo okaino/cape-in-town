@@ -81,6 +81,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 .hero-buttons button {
@@ -132,7 +133,6 @@ footer {
   header nav a {
     font-size: 0.9rem;
   }
-
   .hero-buttons button {
     width: 100%;
     padding: 1rem;
