@@ -12,6 +12,17 @@ import MargheritaPizza from "../image/margherita-pizza.jpg"
 import SebzeliPizza from "../image/sebzeli-pizza.jpg"
 import EtliPizza from "../image/etli-pizza.jpg"
 
+import CocaCola from "../image/coca-cola.jpg"
+import CocaColaZero from "../image/coca-cola-zero.jpg"
+import Fanta from "../image/fanta.jpg"
+import FuseKarpuz from "../image/fuse-karpuz.jpg"
+import Redbull from "../image/redbull.jpg"
+import FuseLimon from "../image/fuse-limon.jpg"
+import FuseMangoAn from "../image/fuse-mangoan.jpg"
+import FuseSefta from "../image/fuse-sefta.jpg"
+import Su from "../image/su.jpg"
+import Sprite from "../image/sprite.jpg"
+import Sade from "../image/sade.jpg"
 import './ShoppingCartDrawer.css';
 
 const ShoppingCartDrawer = ({ onOrder }) => {
@@ -28,8 +39,8 @@ const ShoppingCartDrawer = ({ onOrder }) => {
       const itemTotal = item.extraPatty
         ? (item.price + item.extraPatty * 50) * item.quantity
         : item.extraChick
-        ? (item.price + item.extraChick * 30) * item.quantity
-        : item.price * item.quantity;
+          ? (item.price + item.extraChick * 30) * item.quantity
+          : item.price * item.quantity;
       return total + itemTotal;
     }, 0);
   }, [cartDynamic]);
@@ -41,10 +52,10 @@ const ShoppingCartDrawer = ({ onOrder }) => {
   const toggleDrawer = () => setIsOpen(!isOpen);
 
   const handleQuantityChange = (index, delta) => {
-    if(cartDynamic[index].quantity == 1 && delta == -1){
+    if (cartDynamic[index].quantity == 1 && delta == -1) {
       setCartDynamic((prevCart) => {
         const updatedCart = prevCart.filter((_, i) => i !== index);
-        store.dispatch(updateAllProducts(updatedCart)); 
+        store.dispatch(updateAllProducts(updatedCart));
         return updatedCart;
       });
     }
@@ -89,6 +100,50 @@ const ShoppingCartDrawer = ({ onOrder }) => {
         return SebzeliPizza;
       case "Etli":
         return EtliPizza;
+      case "Coca Cola":
+        return CocaCola;
+        break;
+
+      case "Coca Cola Zero":
+        return CocaColaZero;
+        break;
+
+      case "Fanta":
+        return Fanta;
+        break;
+
+      case "Fuse Tea Karpuz":
+        return FuseKarpuz;
+        break;
+
+
+      case "Sprite":
+        return Sprite;
+        break;
+
+      case "Fuse Tea Limon":
+        return FuseLimon;
+        break;
+
+      case "Fuse Tea Mango Ananas":
+        return FuseMangoAn;
+        break;
+
+      case "Fuse Tea Şeftali":
+        return FuseSefta;
+        break;
+      case "Redbull":
+        return Redbull;
+        break;
+
+      case "Su":
+        return Su;
+        break;
+
+      case "Soda":
+        return Sade;
+        break;
+
       default:
         return null;
     }
@@ -116,16 +171,16 @@ const ShoppingCartDrawer = ({ onOrder }) => {
                     {item.extraPatty
                       ? (item.price + item.extraPatty * 50) * item.quantity
                       : item.extraChick
-                      ? (item.price + item.extraChick * 30) * item.quantity
-                      : item.price * item.quantity} TL
+                        ? (item.price + item.extraChick * 30) * item.quantity
+                        : item.price * item.quantity} TL
                   </span>
                   {(item.extraPatty || item.extraChick) && (
                     <span className="item-name">
                       Extra {item.extraPatty
                         ? `${item.extraPatty} x Köfte(120gr.)`
                         : item.extraChick
-                        ? `${item.extraChick} x Tavuk(120gr.)`
-                        : ""}
+                          ? `${item.extraChick} x Tavuk(120gr.)`
+                          : ""}
                     </span>
                   )}
                   <div className="item-ops-button">
@@ -138,7 +193,7 @@ const ShoppingCartDrawer = ({ onOrder }) => {
             ))}
           </div>
           <div className="cart-footer">
-           
+
             <div className="adress">
               <div className="address-header"><p>Adres*:</p></div>
               {error && <p style={{ color: "red" }}>{error}</p>}
@@ -166,7 +221,7 @@ const ShoppingCartDrawer = ({ onOrder }) => {
               onClick={() => onOrder({ address, notes, cartDynamic, totalPrice })}
               disabled={address.length < 20}
             >
-              Order Now
+              Sipariş Ver
               <img className="whatsapp-icon" src={WhatsappIcon} alt="Order via Whatsapp" />
             </button>
           </div>

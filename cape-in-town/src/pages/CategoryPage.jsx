@@ -25,6 +25,7 @@ import FuseLimon from "../image/fuse-limon.jpg"
 import FuseMangoAn from "../image/fuse-mangoan.jpg"
 import FuseSefta from "../image/fuse-sefta.jpg"
 import Su from "../image/su.jpg"
+import Sprite from "../image/sprite.jpg"
 import Sade from "../image/sade.jpg"
 
 const CategoryPage = () => {
@@ -106,6 +107,10 @@ const CategoryPage = () => {
         return Redbull;
         break;
 
+      case "Sprite":
+        return Sprite;
+        break;
+
       case "Su":
         return Su;
         break;
@@ -147,8 +152,8 @@ const CategoryPage = () => {
               <img src={handleCategoryImage(food.name)} alt={`${food.name}`} />
               <h3>{food.name}</h3>
               <p>{food.description}</p>
-              <p><strong>Price:</strong> {food.price}₺</p>
-              <p><strong>Type:</strong> {food.type}</p>
+              <p><strong>Fiyat:</strong> {food.price}₺</p>
+              {/* <p><strong>Type:</strong> {food.type}</p> */}
               <div className="cart-container">
                 <button onClick={() => openOrderModel(food)}><b>Sepete Ekle</b> 🛒</button>
               </div>
