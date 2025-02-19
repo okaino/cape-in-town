@@ -15,6 +15,9 @@ const HeroPage = () => {
     navigate(category)
   };
 
+  const dateTimeChecker = () => {
+    let time = new Date()
+  }
 
     return (
         <div className="container">
@@ -26,7 +29,16 @@ const HeroPage = () => {
             key={key}
             categoryName={category.name}
             imagePath={category.imagePath}
-            onClick={() => handleCategoryClick(category.path)}
+            onClick={() => {
+              const now = new Date();
+              const hours = now.getHours();
+              const day = now.getDay(); // 0 = Pazar, 1 = Pazartesi, ..., 6 = Cumartesi
+          
+              // Pazar günü dışında, saat 23:59 - 10:00 arasında değilse çalıştır
+              if (day !== 0 && !(hours >= 0 && hours < 10)) {
+                handleCategoryClick(category.path);
+              }
+            }}
           />
           ))}
         </div>
