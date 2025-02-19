@@ -6,8 +6,8 @@ import OklahomaHamburger from "../image/oklahoma-cheese.jpeg"
 import ChickenBurger from "../image/chicken-burger.jpeg"
 import WhatsappIcon from "../image/whatsapp.png"
 // Import your category images here
-import DrinksCategory from "../image/icecek-kategori.png"
-import SnackCategory from "../image/chicken-tenders.jpeg"
+import BaharatliPatates from "../image/patates.jpeg"
+import TrufParmesanli from "../image/parmesan_patates.jpeg"
 import MargheritaPizza from "../image/margherita-pizza.jpeg"
 import SebzeliPizza from "../image/sebzeli-pizza.jpeg"
 import EtliPizza from "../image/etli-pizza.jpeg"
@@ -93,7 +93,10 @@ const ShoppingCartDrawer = ({ onOrder }) => {
         return ChickenBurger;
       case "Chicken Tenders":
       case "Baharatlı Patates Cipsi":
-        return SnackCategory;
+        return BaharatliPatates;
+      case "Trüf Parmesanlı Patates Cipsi":
+        return TrufParmesanli;
+        break;
       case "Margherita":
         return MargheritaPizza;
       case "Sebzeli":
