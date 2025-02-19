@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types"; // For prop type validation
 import "./CardStyle.css";
-import Pizzacategory from "../image/yandan-margi.jpg"
-import HamburgerCategory from "../image/oklahoma-burger.jpg"
-import DrinksCategory from "../image/colaicecek.jpg"
+import Pizzacategory from "../image/yandan-margi.jpeg"
+import HamburgerCategory from "../image/oklahoma-burger.jpeg"
+import DrinksCategory from "../image/colaicecek.jpeg"
 import SnackCategory from "../image/tavuk-ketegori.png"
 
 const CategoryCard = ({ categoryName, onClick }) => { 

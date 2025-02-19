@@ -142,5 +142,13 @@
     "description": "",
     "category": "drinks",
     "type": "liq"
+  },
+  {
+    "id": "19",
+    "name": "Trüf Parmesanlı Patates Cipsi",
+    "price": 200,
+    "description": "Belçika usulü el kesmesi patates kızartması",
+    "category": "toShare",
+    "type": "meat"
   }
 ]

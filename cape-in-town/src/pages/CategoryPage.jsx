@@ -6,27 +6,27 @@ import OrderModel from "../components/OrderModel"
 import "./CategoryPage.css"
 
 
-import Pizzacategory from "../image/margherita.jpg"
+import OklahomaCheeseHamburger from "../image/oklahoma-cheese.jpeg"
+import OklahomaHamburger from "../image/oklahoma-cheese.jpeg"
+import BaharatliPatates from "../image/patates.jpeg"
+import TrufParmesanli from "../image/parmesan_patates.jpeg"
+import ChickenBurger from "../image/chicken-burger.jpeg"
+import MargheritaPizza from "../image/margherita-pizza.jpeg"
+import SebzeliPizza from "../image/sebzeli-pizza.jpeg"
+import EtliPizza from "../image/etli-pizza.jpeg"
+import SnackCategory from "../image/chicken-tenders.jpeg"
 
-import OklahomaCheeseHamburger from "../image/oklahoma-cheese.jpg"
-import OklahomaHamburger from "../image/oklahoma-cheese.jpg"
-import ChickenBurger from "../image/chicken-burger.jpg"
-import MargheritaPizza from "../image/margherita-pizza.jpg"
-import SebzeliPizza from "../image/sebzeli-pizza.jpg"
-import EtliPizza from "../image/etli-pizza.jpg"
-import SnackCategory from "../image/chicken-tenders.jpg"
-
-import CocaCola from "../image/coca-cola.jpg"
-import CocaColaZero from "../image/coca-cola-zero.jpg"
-import Fanta from "../image/fanta.jpg"
-import FuseKarpuz from "../image/fuse-karpuz.jpg"
-import Redbull from "../image/redbulll.jpg"
-import FuseLimon from "../image/fuse-limon.jpg"
-import FuseMangoAn from "../image/fuse-mangoan.jpg"
-import FuseSefta from "../image/fuse-sefta.jpg"
-import Su from "../image/su.jpg"
-import Sprite from "../image/sprite.jpg"
-import Sade from "../image/sade.jpg"
+import CocaCola from "../image/coca-cola.jpeg"
+import CocaColaZero from "../image/coca-cola-zero.jpeg"
+import Fanta from "../image/fanta.jpeg"
+import FuseKarpuz from "../image/fuse-karpuz.jpeg"
+import Redbull from "../image/redbulll.jpeg"
+import FuseLimon from "../image/fuse-limon.jpeg"
+import FuseMangoAn from "../image/fuse-mangoan.jpeg"
+import FuseSefta from "../image/fuse-sefta.jpeg"
+import Su from "../image/su.jpeg"
+import Sprite from "../image/sprite.jpeg"
+import Sade from "../image/sade.jpeg"
 
 const CategoryPage = () => {
   const { category } = useParams(); // Get category from URL params
@@ -61,9 +61,12 @@ const CategoryPage = () => {
         break;
 
       case "Baharatlı Patates Cipsi":
-        return SnackCategory;
+        return BaharatliPatates;
         break;
 
+        case "Trüf Parmesanlı Patates Cipsi":
+          return TrufParmesanli;
+          break;
       case "Margherita":
         return MargheritaPizza;
         break;
