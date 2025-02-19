@@ -47,7 +47,7 @@ const OrderModel = ({ food, isOpen, onClose, onAddToCart, photo }) => {
             <p>{food.description}</p>
             <p>Price: {food.price}₺</p>
             
-              {food.type == "meat" ? 
+              {food.type == "meat" && !food.name.includes("Patates") ? 
               <div className="extra-patty">
                 <label htmlFor="extraPatty">Extra Köfte:</label>
               <select
